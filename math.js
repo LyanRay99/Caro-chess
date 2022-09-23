@@ -49,9 +49,7 @@
 
 
 //TODO: SỬ DỤNG jQuery
-let b = 1;
-let a = 1;
-let c = 1;
+
 function createTables() {
     let rows = $('#rowID').val();
     let columns = $('#columnID').val();
