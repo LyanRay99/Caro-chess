@@ -49,7 +49,7 @@
 
 
 //TODO: SỬ DỤNG jQuery
-let a = 1; //biến a để check khi push code lên github
+
 function createTables() {
     let rows = $('#rowID').val();
     let columns = $('#columnID').val();
