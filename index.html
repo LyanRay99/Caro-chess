@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Tables</title>
+    <!-- <script src="../../../src/Source__Jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        section {
+            width: 500px;
+            height: auto;
+            background-color: aquamarine;
+            padding: 20px 30px;
+            border-radius: 20px 60px;
+        }
+
+        form {
+            display: block;
+            line-height: 2;
+        }
+
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+            font-style: italic;
+            color: red;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 5px;
+            color: red;
+            font-size: 1em;
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+        }
+
+        table {
+            margin: 20px 0px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid salmon;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+            width: 25px;
+            height: 25px;
+            color: rebeccapurple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="sectionID">
+        <form action="#" name="formTable">
+            <label for="#">Row</label>
+            <input type="number" name="rowName" id="rowID" value="2">
+            <label for="#">Column</label>
+            <input type="number" name="columnName" id="columnID" value="3">
+        </form>
+
+        <div>
+            <button class="button__create btn" onclick="createTables()">Create Tables</button>
+            <button class="button__createOne btn" onclick="createOne()">Create 1 Table</button>
+            <buttonn class="button__remove btn" onclick="removeTables()">Remove All Tables</buttonn>
+            <buttonn class="button__removeOne btn">Remove 1 Tables</buttonn>
+        </div>
+        <div>
+            <button class="button_show btn">Show</button>
+            <button class="button_hide btn">Hide</button>
+            <button class="button_toggle btn">Toggle</button>
+        </div>
+    </section>
+
+    <script src="math.js"></script>
+</body>
+
+</html>
